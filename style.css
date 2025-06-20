@@ -1,0 +1,78 @@
+/* Genel body ayarları */
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ana oyun kutusu */
+#game {
+  text-align: center;
+}
+
+/* Oyun tahtası */
+#board {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 150px;
+  gap: 10px;
+  margin: auto;
+}
+
+/* Renkli butonlar */
+.color-btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: transform 0.1s ease-in-out;
+}
+
+#green { background-color: #4CAF50; }
+#red { background-color: #F44336; }
+#yellow { background-color: #FFEB3B; }
+#blue { background-color: #2196F3; }
+
+/* Buton animasyonu */
+.color-btn.animate {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px white;
+}
+
+/* Kontrol paneli */
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#count-num {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Final ekranı */
+#final-screen {
+  display: none;
+  margin-top: 30px;
+}
+
+#final-screen a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Gizli sınıf */
+.hidden {
+  display: none;
+}
+
+
+

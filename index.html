@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simon Game</title>
+
+  <!-- Materialize CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts: Muli -->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+
+  <!-- style.css -->
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="game">
+    <div id="board">
+      <div id="green" class="color-btn"></div>
+      <div id="red" class="color-btn"></div>
+      <div id="yellow" class="color-btn"></div>
+      <div id="blue" class="color-btn"></div>
+
+      <div class="controls">
+        <h3>Simon</h3>
+        <button id="start" class="z-depth-1">Start</button><br />
+        <label>
+          <input type="checkbox" id="strict" />
+          <span>Strict Mode</span>
+        </label>
+        <div id="count-num" class="count">--</div>
+      </div>
+    </div>
+
+    <div id="final-screen" class="hidden">
+      <div id="msg"></div>
+      <br />
+      <a href="#" id="new-game">Play Again</a>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <!-- script.js -->
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
